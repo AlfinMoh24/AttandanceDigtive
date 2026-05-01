@@ -444,7 +444,9 @@ function renderMonthTabs(id) {
 function setActiveMonth(m) {
     state.activeMonth = m;
     const mFilt = document.getElementById('monthFilter');
+    const mFiltMobile = document.getElementById('monthFilterMobile');
     if (mFilt) mFilt.value = m;
+    if (mFiltMobile) mFiltMobile.value = m;
     applyFilters();
 }
 function applyFilters() {
